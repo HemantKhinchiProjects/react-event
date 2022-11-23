@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 
 import Expenses from './components/expenseItem/Expenses';
+import NewExpense from './components/newExpense/NewExpense';
 export default function App() {
   const expenses = [
     {
@@ -27,8 +28,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
