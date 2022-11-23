@@ -20,6 +20,7 @@ const ExpenseForm = () => {
       amount: enterdAmount,
       date: new Date(enterdDate),
     };
+    console.log(expenseData)
   };
   return (
     <form onSubmit={submitHandler}>
