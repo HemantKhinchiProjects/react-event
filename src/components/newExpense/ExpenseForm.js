@@ -14,7 +14,7 @@ const ExpenseForm = () => {
     SetenterdDate(event.target.value);
   };
   const submitHandler = (event) => {
-    event.prevent.default();
+    event.preventDefault();
     const expenseData = {
       title: enterdTitle,
       amount: enterdAmount,
