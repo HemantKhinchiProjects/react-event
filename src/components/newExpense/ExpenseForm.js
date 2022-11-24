@@ -8,10 +8,10 @@ const ExpenseForm = () => {
     SetenterdTitle(event.target.value);
   };
   const amountChangeHandler = (event) => {
-    SetenterdTitle(event.target.value);
+    SetenterdAmount(event.target.value);
   };
   const dateChangeHandler = (event) => {
-    SetenterdTitle(event.target.value);
+    SetenterdDate(event.target.value);
   };
   const submitHandler = (event) => {
     event.prevent.default();
@@ -20,7 +20,7 @@ const ExpenseForm = () => {
       amount: enterdAmount,
       date: new Date(enterdDate),
     };
-    console.log(expenseData)
+    console.log(expenseData);
   };
   return (
     <form onSubmit={submitHandler}>
