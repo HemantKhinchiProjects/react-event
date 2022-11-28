@@ -4,18 +4,18 @@ import Chart from '../Chart/Chart';
 
 const ExpensesChart = (props) => {
   const chartDataPoints = [
-    { id: 0, label: 'Jan', value: 0 },
-    { id: 1, label: 'Fab', value: 0 },
-    { id: 2, label: 'Mar', value: 0 },
-    { id: 3, label: 'Apr', value: 0 },
-    { id: 4, label: 'May', value: 0 },
-    { id: 5, label: 'Jun', value: 0 },
-    { id: 6, label: 'Jul', value: 0 },
-    { id: 7, label: 'Aug', value: 0 },
-    { id: 8, label: 'Sep', value: 0 },
-    { id: 9, label: 'Oct', value: 0 },
-    { id: 10, label: 'Nov', value: 0 },
-    { id: 11, label: 'Dec', value: 0 },
+    { label: 'Jan', value: 0 },
+    { label: 'Feb', value: 0 },
+    { label: 'Mar', value: 0 },
+    { label: 'Apr', value: 0 },
+    { label: 'May', value: 0 },
+    { label: 'Jun', value: 0 },
+    { label: 'Jul', value: 0 },
+    { label: 'Aug', value: 0 },
+    { label: 'Sep', value: 0 },
+    { label: 'Oct', value: 0 },
+    { label: 'Nov', value: 0 },
+    { label: 'Dec', value: 0 },
   ];
   for (const expense of props.expenses) {
     const expenseMonth = expense.date.getMonth(); // starting at 0 => January => 0
@@ -23,7 +23,7 @@ const ExpensesChart = (props) => {
   }
   return (
     <div>
-      <Chart dataPoints={chartDataPoints} />
+      <Chart dataPoints={chartDataPoints} />;
     </div>
   );
 };
