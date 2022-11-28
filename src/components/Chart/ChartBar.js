@@ -1,7 +1,7 @@
 import React from 'react';
 const ChartBar = (props) => {
   let barFullHeight = '0%';
-  if (props.max > 0) {
+  if (props.maxValue > 0) {
     barFullHeight = Math.round((props.value / props.maxValue) * 100) + '%';
   }
   return (
