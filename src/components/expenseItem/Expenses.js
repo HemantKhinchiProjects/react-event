@@ -4,7 +4,7 @@ import './Expenses.css';
 import Card from '../ui/Card';
 import ExpensesFilter from './ExpensesFilter';
 import ExpensesList from './ExpensesList';
-import ExpnChart from './ExpensesChart';
+import ExpensesChart from './ExpensesChart';
 const Expenses = (props) => {
   // console.log(props.items);
   const [filtredYear, setFiltredYear] = useState();
@@ -34,7 +34,7 @@ const Expenses = (props) => {
             />
           ))
         )} */}
-        <ExpnChart expense={filteredExpenses} />
+        <ExpensesChart expenses={filteredExpenses} />
         <ExpensesList item={filteredExpenses} />
       </Card>
     </div>
